@@ -7,6 +7,14 @@ html, body {
     width: 100%;
 }
 
+header {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 50px;
+    background: white;
+}
+
 .hero-container {
     background: url('../assets/BoneChair.jpg') 50% no-repeat;
     background-size: cover;
