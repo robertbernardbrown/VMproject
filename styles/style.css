@@ -68,7 +68,30 @@ header {
 }
 
 .hero-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     color: white;
+    width: 50%;
+    height: 50%;
+}
+
+.hero-text > h1, p {
+    display: flex;
+    align-content: flex-start;
+}
+
+.hero-text > h1 {
+    font-size: 40px;
+    padding-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.hero-text > p {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 .tile-container {
