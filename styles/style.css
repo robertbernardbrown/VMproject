@@ -43,15 +43,32 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: stretch;
     margin: 0 -9999rem;
     padding: 0.25rem 9999rem;
 }
 
+.tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+    height: 150px;
+    width: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    outline: 1px solid grey;
+}
+
 .tile > img {
-    min-width: 50px;
-    max-width: 50px;
-    outline: 2px solid purple;
+    display: flex;
+    width: 100%;
+    max-width: 100px;
+    padding: 10px;
 }
 
 footer {
