@@ -17,6 +17,11 @@ header {
     background: white;
 }
 
+.header-container {
+    width: 100%;
+    display: flex;
+}
+
 .header-logo-container {
     display: flex;
     align-content: center;
@@ -25,13 +30,29 @@ header {
     width: 100%;
     max-width: 100px;
     position: relative;
-    left: 30px;
+    /* left: 100px; */
     padding: 0px 25px 0px 25px;
 }
 
 .header-logo-container > img {
     width: 100%;
     margin: -25px 0px -25px 0px;
+}
+
+.nav-container {
+    position: relative;
+    /* left: 100px; */
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-end;
+    width: 100%;
+}
+
+.nav-container > a {
+    text-decoration: none;
+    color: #464646;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* =========== BODY =========== */
@@ -44,6 +65,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hero-text {
+    color: white;
 }
 
 .tile-container {
@@ -66,7 +91,7 @@ header {
     width: 150px;
     margin: 20px 10px 20px 10px;
     overflow: hidden;
-    outline: 1px solid grey;
+    outline: 1px solid lightgray;
 }
 
 .tile > img {
@@ -87,7 +112,7 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: grey;
+    background: #464646;
 }
 
 footer > img {
