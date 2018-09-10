@@ -54,6 +54,10 @@ header {
     line-height: 30px;
 }
 
+.nav-container>a:hover  {
+    color: #B5121B;
+}
+
 .hamburger-menu {
     display: flex;
     position: absolute;
@@ -168,10 +172,14 @@ footer > img {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #464646;
+    background-color: white;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: stretch;
 }
 
 .sidenav a {
@@ -183,17 +191,21 @@ footer > img {
     transition: 0.3s;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    /* border: 2px solid #464646 */
 }
 
-.nav-link {
-    line-height: auto;
-    border-right: 2px  solid white;
-    border-left: 2px  solid white;
-    border-bottom: 2px  solid white;
+.sidenav > .nav-link {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background: #B5121B;
+    margin: 0 5px 5px 5px;
+    height: 100%;
+    border-radius: 10px;
 }
 
-.sidenav a:hover {
-    color: #f1f1f1;
+.sidenav > .nav-link:hover {
+    /* border: 2px solid white; */
 }
 
 .sidenav .closebtn {
@@ -202,6 +214,10 @@ footer > img {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+.sidenav .closebtn:hover {
+    color: red;
 }
 
 @media screen and (max-height: 450px) {
