@@ -18,8 +18,9 @@ header {
 }
 
 .header-container {
-    width: 100%;
+    width: auto;
     display: flex;
+    margin-left: 100px;
 }
 
 .header-logo-container {
@@ -30,7 +31,6 @@ header {
     width: 100%;
     max-width: 100px;
     position: relative;
-    /* left: 100px; */
     padding: 0px 25px 0px 25px;
 }
 
@@ -41,12 +41,12 @@ header {
 
 .nav-container {
     position: relative;
-    /* left: 100px; */
     bottom: 0;
     display: flex;
     justify-content: space-around;
     align-self: flex-end;
     width: 100%;
+    padding-left: -100px;
 }
 
 .nav-container > a {
