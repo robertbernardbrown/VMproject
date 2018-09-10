@@ -32,10 +32,12 @@ header {
     max-width: 100px;
     position: relative;
     padding: 0px 25px 0px 25px;
+    min-width: 100px;
 }
 
 .header-logo-container > img {
     width: 100%;
+    min-width: 100%;
     margin: -25px 0px -25px 0px;
 }
 
@@ -46,13 +48,16 @@ header {
     justify-content: space-around;
     align-self: flex-end;
     width: 100%;
-    padding-left: -100px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .nav-container > a {
     text-decoration: none;
     color: #464646;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 30px;
 }
 
 /* =========== BODY =========== */
