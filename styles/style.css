@@ -13,12 +13,6 @@ html, body {
 /* =========== HEADER =========== */
 
 header {
-    position: absolute;
-    width: 100%;
-    background: white;
-}
-
-.header-container {
     width: auto;
     display: flex;
     align-items: center;
@@ -26,6 +20,12 @@ header {
     -o-transition:all .5s linear; 
     -moz-transition:all .5s linear; 
     -webkit-transition:all .5s linear;
+}
+
+.header-container {
+    position: absolute;
+    width: 100%;
+    background: white;
 }
 
 .header-logo-container {
@@ -46,11 +46,11 @@ header {
     margin: -25px 0px -25px 0px;
 }
 
-.nav-container {
+.mainnav {
     display: none;
 }
 
-.nav-container > a {
+.mainnav > a {
     text-decoration: none;
     color: #464646;
     font-family: 'Montserrat', sans-serif;
@@ -58,7 +58,7 @@ header {
     line-height: 30px;
 }
 
-.nav-container>a:hover  {
+.mainnav >a:hover  {
     color: #B5121B;
 }
 
@@ -68,6 +68,7 @@ header {
     font-size: 45px;
     cursor: pointer;
     right: 5%;
+    border: none;
 }
 
 /* =========== BODY =========== */
@@ -207,6 +208,11 @@ footer > img {
     background: #B5121B
 }
 
+.sidenav > .nav-link:focus {
+    color: white;
+    background: #B5121B
+}
+
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -214,6 +220,11 @@ footer > img {
     font-size: 36px;
     margin-left: 50px;
     color: red;
+}
+
+.closebtn{
+    border: none;
+    background: none;
 }
 
 .fas {
@@ -238,7 +249,7 @@ footer > img {
     .hamburger-menu {
         display: none;
     }
-    .nav-container {
+    .mainnav {
         display: flex;
         justify-content: space-around;
         align-self: flex-end;
@@ -251,7 +262,7 @@ footer > img {
 }
 
 @media screen and (min-width: 850px) {
-    .header-container {
+    header {
         margin-left: 100px;
     }
     .hero-text {
