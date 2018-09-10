@@ -12,6 +12,12 @@ html, body {
 
 /* =========== HEADER =========== */
 
+.header-container {
+    position: absolute;
+    width: 100%;
+    background: white;
+}
+
 header {
     width: auto;
     display: flex;
@@ -20,30 +26,25 @@ header {
     -o-transition:all .5s linear; 
     -moz-transition:all .5s linear; 
     -webkit-transition:all .5s linear;
-}
-
-.header-container {
-    position: absolute;
-    width: 100%;
-    background: white;
+    height: 100%;
 }
 
 .header-logo-container {
     display: flex;
     align-content: center;
-    justify-content: center;
     background: #B5121B;
     width: 100%;
     max-width: 100px;
     position: relative;
     padding: 0px 25px 0px 25px;
-    min-width: 100px;
+    height: 100%;
 }
 
 .header-logo-container > img {
     width: 100%;
-    min-width: 100%;
-    margin: -25px 0px -25px 0px;
+    min-width: 100px;
+    max-width: 100px;
+    height: 100%;
 }
 
 .mainnav {
@@ -67,8 +68,9 @@ header {
     position: absolute;
     font-size: 45px;
     cursor: pointer;
-    right: 5%;
+    right: 0;
     border: none;
+    padding: 0 20px 0 20px;
 }
 
 /* =========== BODY =========== */
@@ -162,8 +164,8 @@ footer {
 
 footer > img {
     width: 100%;
-    padding: 20px;
-    max-width: 400px;
+    padding: 25px;
+    max-width: 300px;
 }
 
 /* =========== SIDEBAR =========== */
@@ -186,7 +188,7 @@ footer > img {
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     display: block;
     transition: 0.3s;
@@ -198,8 +200,8 @@ footer > img {
     display: flex;
     align-items: center;
     background: white;
-    margin: 0 5px 5px 5px;
-    height: 80px;
+    margin: 0 10px 10px 10px;
+    height: 70px;
     color: #464646;
 }
 
@@ -216,9 +218,8 @@ footer > img {
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 0;
     font-size: 36px;
-    margin-left: 50px;
     color: red;
 }
 
