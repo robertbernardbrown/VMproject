@@ -1,7 +1,7 @@
-$(document).ready(function () {
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
 
-    $('#sidebarCollapse').on('click', function () {
-        $('#sidebar').toggleClass('active');
-    });
-
-});
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
