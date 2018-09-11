@@ -87,6 +87,7 @@ header {
 
 .hero-text {
     position: absolute;
+    right: 0;
     bottom: 0;
     color: white;
     height: 50%;
@@ -147,6 +148,16 @@ header {
     height: 0;
 }
 
+#sidenav-overlay {
+    display: none;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 50%;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+
 /* =========== FOOTER =========== */
 
 .footer-container {
@@ -174,7 +185,7 @@ footer > img {
     height: 100vh;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     right: 0;
     background-color: #464646;
@@ -268,8 +279,6 @@ footer > img {
     }
     .hero-text {
         position: absolute;
-        bottom: 0;
-        right: 0;
         width: 50%;
         padding: 0;
     }
