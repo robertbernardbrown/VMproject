@@ -17,9 +17,10 @@ html, body {
 /* =========== HEADER =========== */
 
 .header-container {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     background: white;
+    height: 100vh;
 }
 
 header {
@@ -30,7 +31,7 @@ header {
     -o-transition:all .5s linear; 
     -moz-transition:all .5s linear; 
     -webkit-transition:all .5s linear;
-    height: 100%;
+    height: 15%;
 }
 
 .header-logo-container {
@@ -83,7 +84,7 @@ header {
 .hero-container {
     background: url('../assets/hero-img.jpg') 100% no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 85%;
     text-align: center;
     display: flex;
     align-items: center;
@@ -119,7 +120,6 @@ header {
 
 .tile-container {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     align-items: stretch;
@@ -164,14 +164,6 @@ header {
     right: 0;
     left: 0;
     bottom: 0;
-}
-
-[aria-hidden="true"] {
-    display: none;
-}
-
-[aria-hidden="false"] {
-    display: block;
 }
 
 /* =========== FOOTER =========== */
